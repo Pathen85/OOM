@@ -1,4 +1,5 @@
 package studentApp;
+
 import java.time.LocalDate;
 
 public class Student {
@@ -8,7 +9,9 @@ public class Student {
 	private int matrikelnummer;
 	private int alter;
 	private Adresse adresse;
+	private LocalDate studienstart;
 
+	// Getter
 	public String getName() {
 		return name;
 	}
@@ -28,18 +31,25 @@ public class Student {
 	public int getAlter() {
 		return alter;
 	}
-	
+
 	public Adresse getAdresse() {
 		return adresse;
 	}
 
-	public Student(String name, String vorname, LocalDate geburtstag, int matrikelnummer, Adresse adresse) {
+	public LocalDate getStudienstart() {
+		return studienstart;
+	}
+
+	// Konstruktor
+	public Student(String name, String vorname, LocalDate geburtstag, int matrikelnummer, Adresse adresse,
+			LocalDate studienstart) {
 		this.name = name;
 		this.vorname = vorname;
 		this.geburtstag = geburtstag;
 		this.matrikelnummer = matrikelnummer;
 		this.alter = BerechneAlter();
 		this.adresse = adresse;
+		this.studienstart = studienstart;
 	}
 
 	// Berechnet das Alter des Studenten
