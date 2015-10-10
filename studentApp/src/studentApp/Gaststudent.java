@@ -24,7 +24,5 @@ public class Gaststudent extends Student {
 				+ getGeburtstag() + ", Alter: " + getAlter() + ", Matrikelnummer:" + getMatrikelnummer() + ", Adresse: "
 				+ getAdresse() + ", aktuelles Semester: " + semester + "]";
 	}
-	
-	
 
 }
