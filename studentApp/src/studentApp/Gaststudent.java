@@ -21,7 +21,7 @@ public class Gaststudent extends Student {
 	@Override
 	public String toString() {
 		return "Gaststudent [Name: " + getName() + ", Vorname: " + getVorname() + ", Geburtstag: "
-				+ getGeburtstag() + ", Alter: " + getAlter() + ", Matrikelnummer:" + getMatrikelnummer() + ", Adresse: "
+				+ getGeburtstag() + ", Alter: " + getAlter() + ", Matrikelnummer: " + getMatrikelnummer() + ", Adresse: "
 				+ getAdresse() + ", aktuelles Semester: " + semester + "]";
 	}
 
