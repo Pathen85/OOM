@@ -31,8 +31,8 @@ public class Student {
 		return alter;
 	}
 
-	public Adresse getAdresse() {
-		return adresse;
+	public String getAdresse() {
+		return adresse.toString();
 	}
 
 	// Konstruktor
@@ -63,5 +63,11 @@ public class Student {
 			return alter--;
 		}
 
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", vorname=" + vorname + ", geburtstag=" + geburtstag + ", matrikelnummer="
+				+ matrikelnummer + ", alter=" + alter + ", adresse=" + adresse + "]";
 	}
 }

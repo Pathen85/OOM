@@ -26,6 +26,10 @@ public class StudentApp {
 		studenten.add(new EingeschriebenerStudent("Guerkchen", "Aylin", LocalDate.of(1994, 4, 27), 1512068, adresse2,
 				LocalDate.of(2015, 3, 1)));
 
+		EingeschriebenerStudent karl = new EingeschriebenerStudent("Karl", "Simon", LocalDate.of(1993, 8, 23), 1234567,
+				adresse1, LocalDate.of(2015, 3, 1));
+
 		System.out.println(durchschnittsalter(studenten));
+		System.out.println(karl.toString());
 	}
 }
