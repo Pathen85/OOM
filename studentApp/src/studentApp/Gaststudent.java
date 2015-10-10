@@ -20,7 +20,7 @@ public class Gaststudent extends Student {
 
 	@Override
 	public String toString() {
-		return "Eingeschriebener Student [Name: " + getName() + ", Vorname: " + getVorname() + ", Geburtstag: "
+		return "Gaststudent [Name: " + getName() + ", Vorname: " + getVorname() + ", Geburtstag: "
 				+ getGeburtstag() + ", Alter: " + getAlter() + ", Matrikelnummer:" + getMatrikelnummer() + ", Adresse: "
 				+ getAdresse() + ", aktuelles Semester: " + semester + "]";
 	}
