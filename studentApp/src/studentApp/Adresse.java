@@ -31,7 +31,7 @@ public class Adresse {
 
 	@Override
 	public String toString() {
-		return "Adresse [plz=" + plz + ", stadt=" + stadt + ", strasse=" + strasse + ", hausnummer=" + hausnummer + "]";
+		return "[PLZ: " + plz + ", Stadt: " + stadt + ", Strasse: " + strasse + ", Hausnummer: " + hausnummer + "]";
 	}
 
 }

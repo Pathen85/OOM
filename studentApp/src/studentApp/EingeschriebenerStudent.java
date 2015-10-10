@@ -17,4 +17,11 @@ public class EingeschriebenerStudent extends Student {
 		this.studienstart = studienstart;
 	}
 
+	@Override
+	public String toString() {
+		return "Eingeschriebener Student [Name: " + getName() + ", Vorname: " + getVorname() + ", Geburtstag: "
+				+ getGeburtstag() + ", Alter: " + getAlter() + ", Matrikelnummer:" + getMatrikelnummer() + ", Adresse: "
+				+ getAdresse() + ", Studienstart: " + studienstart + "]";
+	}
+
 }
