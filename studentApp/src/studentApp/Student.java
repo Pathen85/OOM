@@ -9,7 +9,6 @@ public class Student {
 	private int matrikelnummer;
 	private int alter;
 	private Adresse adresse;
-	private LocalDate studienstart;
 
 	// Getter
 	public String getName() {
@@ -36,20 +35,14 @@ public class Student {
 		return adresse;
 	}
 
-	public LocalDate getStudienstart() {
-		return studienstart;
-	}
-
 	// Konstruktor
-	public Student(String name, String vorname, LocalDate geburtstag, int matrikelnummer, Adresse adresse,
-			LocalDate studienstart) {
+	public Student(String name, String vorname, LocalDate geburtstag, int matrikelnummer, Adresse adresse) {
 		this.name = name;
 		this.vorname = vorname;
 		this.geburtstag = geburtstag;
 		this.matrikelnummer = matrikelnummer;
 		this.alter = BerechneAlter();
 		this.adresse = adresse;
-		this.studienstart = studienstart;
 	}
 
 	// Berechnet das Alter des Studenten

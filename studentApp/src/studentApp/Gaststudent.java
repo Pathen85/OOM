@@ -14,7 +14,7 @@ public class Gaststudent extends Student {
 	// Konstruktor
 	public Gaststudent(String name, String vorname, LocalDate geburtstag, int matrikelnummer, Adresse adresse,
 			int semester) {
-		super(name, vorname, geburtstag, matrikelnummer, adresse, null);
+		super(name, vorname, geburtstag, matrikelnummer, adresse);
 		this.semester = semester;
 	}
 
