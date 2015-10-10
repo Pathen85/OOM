@@ -41,12 +41,12 @@ public class Student {
 		this.vorname = vorname;
 		this.geburtstag = geburtstag;
 		this.matrikelnummer = matrikelnummer;
-		this.alter = BerechneAlter();
+		this.alter = berechneAlter();
 		this.adresse = adresse;
 	}
 
 	// Berechnet das Alter des Studenten
-	public int BerechneAlter() {
+	public int berechneAlter() {
 		LocalDate heute = LocalDate.now();
 		alter = heute.getYear() - geburtstag.getYear();
 
