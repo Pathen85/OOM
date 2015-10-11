@@ -3,6 +3,7 @@ package studentApp;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 public class StudentApp {
 
@@ -32,9 +33,11 @@ public class StudentApp {
 		studenten.add(guerkchen);
 		studenten.add(white);
 
+		Collections.sort(studenten, new Altersvergleich());
+
 		System.out.println(durchschnittsalter(studenten));
-		System.out.println(karl.toString());
-		System.out.println(guerkchen.toString());
-		System.out.println(white.toString());
+		for (Student student : studenten) {
+			System.out.println(student.toString());
+		}
 	}
 }
