@@ -67,8 +67,12 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Eingeschriebener Student [Name: " + getName() + ", Vorname: " + getVorname() + ", Geburtstag: "
-				+ getGeburtstag() + ", Alter: " + getAlter() + ", Matrikelnummer: " + getMatrikelnummer() + ", Adresse: "
-				+ getAdresse() + "]";
+		return "\nStudent:"
+				+ "\nName: " + getName()
+				+ "\nVorname: " + getVorname() 
+				+ "\nGeburtstag: " + getGeburtstag() 
+				+ "\nAlter: " + getAlter() 
+				+ "\nMatrikelnummer: " + getMatrikelnummer() 
+				+ "\nAdresse: " + getAdresse();
 	}
 }
