@@ -35,7 +35,7 @@ public class StudentApp {
 
 		Collections.sort(studenten, new Altersvergleich());
 
-		System.out.println("Durchschnittsalter aller Studenten: " + durchschnittsalter(studenten));
+		System.out.println("Durchschnittsalter aller Studenten: " + durchschnittsalter(studenten) + " Jahre");
 		for (Student student : studenten) {
 			System.out.println(student.toString());
 		}
