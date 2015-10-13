@@ -3,7 +3,7 @@ package studentApp;
 import java.util.Comparator;
 
 /**
- * Vergleich das Alter zweier Objekte vom Typ Student. Student 1 jünger als
+ * Vergleicht das Alter zweier Objekte vom Typ Student. Student 1 jünger als
  * Student 2, wird eine negative Zahl zurückgegeben. Sind sie gleich alt, wird
  * die 0 zurückgegeben und ist Student 1 älter eine positive Zahl.
  * 
