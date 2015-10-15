@@ -32,10 +32,23 @@ public class Student {
 	}
 
 	public String getAdresse() {
-		return adresse.toString();
+		if (adresse == null) {
+			return null;
+		} else {
+			return adresse.toString();
+		}
 	}
 
 	// Konstruktor
+	public Student(String name, String vorname, LocalDate geburtstag, int matrikelnummer) {
+		this.name = name;
+		this.vorname = vorname;
+		this.geburtstag = geburtstag;
+		this.matrikelnummer = matrikelnummer;
+		this.alter = berechneAlter();
+		this.adresse = null;
+	}
+
 	public Student(String name, String vorname, LocalDate geburtstag, int matrikelnummer, Adresse adresse) {
 		this.name = name;
 		this.vorname = vorname;
@@ -67,12 +80,14 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "\nStudent:"
-				+ "\nName: " + getName()
-				+ "\nVorname: " + getVorname() 
-				+ "\nGeburtstag: " + getGeburtstag() 
-				+ "\nAlter: " + getAlter() 
-				+ "\nMatrikelnummer: " + getMatrikelnummer() 
-				+ "\nAdresse: " + getAdresse();
+		if (getAdresse() == null) {
+			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer();
+		} else {
+			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
+					+ "\nAdresse: " + getAdresse();
+		}
+
 	}
 }

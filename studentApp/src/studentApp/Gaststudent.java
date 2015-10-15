@@ -12,6 +12,11 @@ public class Gaststudent extends Student {
 	}
 
 	// Konstruktor
+	public Gaststudent(String name, String vorname, LocalDate geburtstag, int matrikelnummer, int semester) {
+		super(name, vorname, geburtstag, matrikelnummer);
+		this.semester = semester;
+	}
+
 	public Gaststudent(String name, String vorname, LocalDate geburtstag, int matrikelnummer, Adresse adresse,
 			int semester) {
 		super(name, vorname, geburtstag, matrikelnummer, adresse);
@@ -20,14 +25,16 @@ public class Gaststudent extends Student {
 
 	@Override
 	public String toString() {
-		return "\nGaststudent:"
-				+ "\nName: " + getName()
-				+ "\nVorname: " + getVorname() 
-				+ "\nGeburtstag: " + getGeburtstag() 
-				+ "\nAlter: " + getAlter() 
-				+ "\nMatrikelnummer: " + getMatrikelnummer() 
-				+ "\nAdresse: " + getAdresse() 
-				+ "\naktuelles Semester: " + semester;
+		if (getAdresse() == null) {
+			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
+					+ "\naktuelles Semester: " + semester;
+		} else {
+			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
+					+ "\nAdresse: " + getAdresse() + "\nAktuelles Semester: " + semester;
+		}
+
 	}
 
 }

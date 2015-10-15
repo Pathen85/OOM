@@ -47,10 +47,14 @@ public class StudentApp {
 				adresse1, LocalDate.of(2015, 3, 1));
 		EingeschriebenerStudent guerkchen = new EingeschriebenerStudent("Guerkchen", "Aylin", LocalDate.of(1994, 4, 27),
 				1512068, adresse2, LocalDate.of(2015, 3, 1));
-		Gaststudent white = new Gaststudent("White", "James", LocalDate.of(1992, 10, 12), 1241244, adresse3, 2);
+		Gaststudent li = new Gaststudent("Li", "Mohammed", LocalDate.of(1990, 1, 30), 1354355, adresse3, 4);
+		
+		//ohne Adresse
+		Gaststudent white = new Gaststudent("White", "James", LocalDate.of(1992, 10, 12), 1241244, 2);
 
 		studenten.add(karl);
 		studenten.add(guerkchen);
+		studenten.add(li);
 		studenten.add(white);
 
 		// Sortierung der Liste "studenten" nach dem Alter der Studenten

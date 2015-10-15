@@ -12,6 +12,12 @@ public class EingeschriebenerStudent extends Student {
 
 	// Konstruktor
 	public EingeschriebenerStudent(String name, String vorname, LocalDate geburtstag, int matrikelnummer,
+			LocalDate studienstart) {
+		super(name, vorname, geburtstag, matrikelnummer);
+		this.studienstart = studienstart;
+	}
+
+	public EingeschriebenerStudent(String name, String vorname, LocalDate geburtstag, int matrikelnummer,
 			Adresse adresse, LocalDate studienstart) {
 		super(name, vorname, geburtstag, matrikelnummer, adresse);
 		this.studienstart = studienstart;
@@ -19,14 +25,16 @@ public class EingeschriebenerStudent extends Student {
 
 	@Override
 	public String toString() {
-		return "\nEingeschriebener Student:"
-				+ "\nName: " + getName()
-				+ "\nVorname: " + getVorname() 
-				+ "\nGeburtstag: " + getGeburtstag() 
-				+ "\nAlter: " + getAlter() 
-				+ "\nMatrikelnummer: " + getMatrikelnummer() 
-				+ "\nAdresse: " + getAdresse() 
-				+ "\nStudienstart: " + studienstart;
+		if (getAdresse() == null) {
+			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
+					+ "\nStudienstart: " + studienstart;
+		} else {
+			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
+					+ "\nAdresse: " + getAdresse() + "\nStudienstart: " + studienstart;
+		}
+
 	}
 
 }
