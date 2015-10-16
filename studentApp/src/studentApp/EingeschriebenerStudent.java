@@ -26,11 +26,11 @@ public class EingeschriebenerStudent extends Student {
 	@Override
 	public String toString() {
 		if (getAdresse() == null) {
-			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+			return "\nEingeschriebener Student:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
 					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
 					+ "\nStudienstart: " + studienstart;
 		} else {
-			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+			return "\nEingeschriebener Student:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
 					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
 					+ "\nAdresse: " + getAdresse() + "\nStudienstart: " + studienstart;
 		}

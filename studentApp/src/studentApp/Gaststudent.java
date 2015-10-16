@@ -26,11 +26,11 @@ public class Gaststudent extends Student {
 	@Override
 	public String toString() {
 		if (getAdresse() == null) {
-			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+			return "\nGaststudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
 					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
 					+ "\naktuelles Semester: " + semester;
 		} else {
-			return "\nStudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
+			return "\nGaststudent:" + "\nName: " + getName() + "\nVorname: " + getVorname() + "\nGeburtstag: "
 					+ getGeburtstag() + "\nAlter: " + getAlter() + "\nMatrikelnummer: " + getMatrikelnummer()
 					+ "\nAdresse: " + getAdresse() + "\nAktuelles Semester: " + semester;
 		}
